@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/post-page.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/iofrm-theme30.css" />
+  </head>
+  <body>
+    <div class="form-body on-top-mobile">
+      <div class="website-logo">
+        <a href="gethelp.html">
+          <div class="logo">
+            <span>✈️ FlyShare</span>
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="img-holder">
+          <div class="bg"></div>
+          <div class="info-holder simple-info">
+            <div class="mb-5">
+              <div class="type-animation">
+                <h2 class="mb-2 animated">FlyShare.com</h2>
+              </div>
+              <h3 class="mb-4">
+                <i class="font-weight-light"
+                  >Innovative Platform for Shared Luggage Solutions!</i
+                >
+              </h3>
+            </div>
+            <div>
+              <p>
+                Your travel companion for hassle-free journeys. Seamlessly
+                connect with fellow passengers to share luggage space and
+                mitigate excess baggage charges.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="header">
+            <div class="col-12 col-sm-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Flight number"
+              />
+            </div>
+            <div class="col-12 col-sm-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Travelling from"
+                id="cityInputFrom"
+                list="citiesListFrom"
+              />
+            </div>
+            <div class="col-12 col-sm-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Travelling to"
+                id="cityInputTo"
+                list="citiesListTo"
+              />
+            </div>
+            <div class="col-12 col-sm-3">
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Departure Date"
+              />
+            </div>
+          </div>
+          <div class="submit-button">
+           
+           
+                <button type="button" class="btn btn-success" id="verification">
+                 Submit
+               </button> 
+
+          </div>
+          <div class="main-container">
+            <div class="post">
+              <div class="post-content">
+                <p>
+                  <span class="iata-code">JFK</span>
+                  <img
+                    src="./assets/images/flight.png"
+                    alt="Flight Symbol"
+                    class="flight-symbol"
+                  />
+                  <span class="iata-code">LHR</span>
+                </p>
+                <div class="dept">
+                  <p>bengaluru</p>
+                  <p>01/24/2024</p>
+                  <p>hyderabad</p>
+                </div>
+                <div class="first">
+                  <p>ABC123</p>
+                  <p>Tharun</p>
+                  <!-- <p>January 1, 2024</p> -->
+                </div>
+                <div class="second">
+                  <p>XYZ789</p>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    id="verification"
+                  >
+                    Verify PNR
+                  </button>
+                </div>
+                <div class="third">
+                  <p>Available Space: 5kgs</p>
+                </div>
+                <div class="fourth">
+                  <button
+                    type="button"
+                    class="btn btn-success btn-sm"
+                    id="chat"
+                  >
+                    chat
+                  </button>
+                  <div class="rating">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                    <span class="star" onclick="rate(6)">★</span>
+                  </div>
+                </div>
+
+                <!-- <h2>Passenger Name: John Doe</h2>
+              <p>Departure Date: January 1, 2024</p>
+              <p>Flight Number: ABC123</p>
+              <p>PNR Number: <span id="pnrNumber">XYZ789</span></p>
+              <p>Travelling From: New York</p>
+              <p>Travelling To: London</p>
+              <p>Available Space: 5</p> -->
+              </div>
+            </div>
+            <div class="post2">
+              <div class="post-content">
+                <p>
+                  <span class="iata-code">JFK</span>
+                  <img
+                    src="./assets/images/flight.png"
+                    alt="Flight Symbol"
+                    class="flight-symbol"
+                  />
+                  <span class="iata-code">LHR</span>
+                </p>
+                <div class="dept">
+                  <p>bengaluru</p>
+                  <p>01/24/2024</p>
+                  <p>hyderabad</p>
+                </div>
+                <div class="first">
+                  <p>ABC123</p>
+                  <p>Tharun</p>
+                  <!-- <p>January 1, 2024</p> -->
+                </div>
+                <div class="second">
+                  <p>XYZ789</p>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    id="verification"
+                  >
+                    Verify PNR
+                  </button>
+                </div>
+                <div class="third">
+                  <p>Available Space: 5kgs</p>
+                </div>
+                <div class="fourth">
+                  <button
+                    type="button"
+                    class="btn btn-success btn-sm"
+                    id="chat"
+                  >
+                    chat
+                  </button>
+                  <div class="rating">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                    <span class="star" onclick="rate(6)">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="post-actions">
+              <button id="verifyButton">Verify PNR</button>
+              <button id="chatButton">Chat</button>
+            </div>
+            <div id="chatSection" class="chat-section">
+              Chat functionality would be implemented here
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/posts-page.js"></script>
+  </body>
+</html>

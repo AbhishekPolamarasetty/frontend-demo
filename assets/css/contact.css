@@ -1,0 +1,146 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+/* .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+} */
+
+
+
+.copyright{
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    font-size: .75rem;
+}
+
+.contact-main {
+    background: url("../images/contact.jpg");
+    color: #fff;
+    background-size: cover; /* This will make the image cover the entire container */
+    background-position: center; /* This will position the image at the center */
+    /* background-attachment: fixed;  */
+    min-height: 100vh;
+  }
+  
+  .contact-main-text{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      padding: 1rem;
+      min-width: 75%;
+      text-align: center;
+  }
+  
+  .contact-main-text h1{
+      font-size: 4rem;
+  }
+  
+  .contact-main-text p{
+      font-size: 1.5rem;
+      margin: 1rem 0 2rem 0;
+  }
+  
+  .contact-main-text a{
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 25px;
+      border: 1px solid #fff;
+      position: relative;
+  }
+  
+  .contact-main-text a::before{
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      background-color: rgb(30, 114, 210);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transform: scaleX(0);
+      transition: .2s ease-in-out;
+  }
+  
+  .contact-main-text a:hover::before{
+      transform: scaleX(1);
+  }
+  
+  @media screen and (max-width: 600px) {
+      .contact-main-text{
+          width: 90%;
+      }
+  
+      .contact-main-text h1{
+          font-size: 2rem;
+      }
+  
+      .contact-main-text p{
+          font-size: 1rem;
+      }
+  }
+  
+  .contact-form{
+      text-align: center;
+      padding: 1rem;
+      background: url("../images/form.jpg");
+      color: #fff;
+      background-size: cover; /* This will make the image cover the entire container */
+      background-position: center; /* This will position the image at the center */
+      /* background-attachment: fixed; 
+      min-height: 100vh; */
+  }
+  
+  .contact-form form{
+      max-width: 500px;
+      margin:2rem auto;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .contact-form form input{
+      height: 40px;
+      padding: 5px 10px;
+      outline: none;
+      margin-bottom: 5px;
+  }
+  
+  .contact-form form textarea{
+      padding: 5px 10px;
+      outline: none;
+  }
+  
+  .contact-form form input:focus, .contact-form form textarea:focus{
+      outline: 1px solid royalblue;
+  }
+  
+  .contact-form form button{
+      background-color: royalblue;
+      height: 40px;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      margin:5px 0;
+      transition: .3s ease-in-out;
+  }
+  
+  .contact-form form button:hover{
+      background-color: rgb(35, 64, 150);
+  }
+  
+ 

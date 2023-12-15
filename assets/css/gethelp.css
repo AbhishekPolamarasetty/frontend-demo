@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.body {
+  /* border: 3px solid black; */
+  font-family: 'Roboto', sans-serif;
+  /* background-image: url("main.png");
+  background-position: fixed; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* box-sizing: ; */
+}
+.container{
+    height: 100vh;
+/* border: 3px solid black; */
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../images/main.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a svg{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+.content {
+    font-size: 50px;
+    font-weight: bolder;
+    /* color: white; */
+    margin-left: 850px;
+   
+}
+    /* display: flex;
+    flex-direction: row ; */
+
+.content h1 {
+    margin-top: 20px;
+    font-weight: 600px;
+    transition: 0.5s;
+    color: #063146;
+    color: #063146;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px #063146;
+  color: transparent;
+}
+/* .buttons{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 740px;
+}
+.get {
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: rgb(198, 217, 235);
+    padding: 14px 70px;
+    margin-top: 50px;
+    margin-left: 120px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: black;
+}
+.post {
+    text-decoration: none;
+    border: 2px solid rgb(198, 217, 235);
+    background-color:rgb(9, 64, 116);
+    padding: 14px 70px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: white;
+} */
+.buttons{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: -40px;
+    margin-left: 85px;
+}
+.get {
+    text-decoration: none;
+    /* border: 2px solid white; */
+    background-color: #063146;
+    padding: 14px 70px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: white;
+}
+.post {
+    text-decoration: none;
+    background-color: #063146;
+    /* background-color:rgb(9, 64, 116); */
+    padding: 14px 70px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    color: white;
+}
+/* @media screen and (min-width: 1024px) {
+  .container {
+    width: 100%; Adjusting width for smaller screens
+    height: 100vh; Allow the container's height to adjust automatically
+    background-size: cover;   
+  }
+
+  .sidebar {
+    left: -250px; Hide sidebar by default on smaller screens
+    transition: all .5s ease;
+  }
+
+  .content {
+    margin-left: 700px; Adjust content position for smaller screens
+  }
+
+  .buttons {
+    margin-left: 10px; Adjust button position for smaller screens
+  }
+
+  .sidebar header,
+  .sidebar ul a {
+    font-size: 16px; Reduce font size for sidebar items
+  }
+} */
+/* @media screen and (min-width: 1024px) {
+    .container {
+      width: 100%; Adjusting width for smaller screens
+      height: 100vh; Allow the container's height to adjust automatically
+      background-size: cover;   
+    }
+  
+    .sidebar {
+      left: -250px; Hide sidebar by default on smaller screens
+      transition: all .5s ease;
+    }
+  
+    .content {
+      margin-left: 700px; Adjust content position for smaller screens
+    }
+  
+    .buttons {
+      margin-left: 10px; Adjust button position for smaller screens
+    }
+  
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 16px; Reduce font size for sidebar items
+    }
+  } */
+/* @media screen and (max-width: 1024px) {
+    .container {
+      width: 100%; Adjusting width for smaller screens
+      height: 100vh; Allow the container's height to adjust automatically
+      background-size: cover;
+    }
+  
+    .sidebar {
+      left: -250px; Hide sidebar by default on smaller screens
+      transition: all .5s ease;
+    }
+  
+    .content {
+      margin-left:600px; Adjust content position for smaller screens
+    }
+  
+    .buttons {
+      margin-left: 10px; Adjust button position for smaller screens
+    }
+  
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 18px; Reduce font size for sidebar items
+    }
+  } */
+  @media screen and (max-width: 320px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      transition: all .5s ease;
+      width: 120px;
+    }
+  
+    .content {
+      margin-left:120px; /* Adjust content position for smaller screens */
+      font-size: 25px; 
+    }
+    .main h1{
+      margin-top: 280px;
+    }
+  
+    .buttons {
+      margin-left: 10px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 7px 35px;
+    }
+    .post{
+      padding: 7px 35px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 12px; /* Reduce font size for sidebar items */
+      padding-left: 10px;
+    }
+    .sidebar ul a svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      transition: all .5s ease;
+      width: 180px;
+    }
+  
+    .content {
+      margin-left:200px; /* Adjust content position for smaller screens */
+      font-size: 25px; 
+    }
+    .main h1{
+      margin-top: 280px;
+    }
+  
+    .buttons {
+      margin-left: 10px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 7px 35px;
+    }
+    .post{
+      padding: 7px 35px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 15px; /* Reduce font size for sidebar items */
+      padding-left: 10px;
+    }
+    .sidebar ul a svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      transition: all .5s ease;
+      width: 240px;
+    }
+  
+    .content {
+      margin-left:250px; /* Adjust content position for smaller screens */
+      font-size: 40px; 
+    }
+    .main h1{
+      margin-top: 200px;
+    }
+  
+    .buttons {
+      margin-left: 10px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 7px 35px;
+    }
+    .post{
+      padding: 7px 35px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 18px; /* Reduce font size for sidebar items */
+      padding-left: 10px;
+    }
+    .sidebar ul a svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      transition: all .5s ease;
+      width: 240px;
+    }
+  
+    .content {
+      margin-left:280px; /* Adjust content position for smaller screens */
+      font-size: 40px; 
+    }
+    .main h1{
+      margin-top: 250px;
+    }
+  
+    .buttons {
+      margin-left: 50px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 7px 35px;
+    }
+    .post{
+      padding: 7px 35px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 23px; /* Reduce font size for sidebar items */
+      padding-left: 10px;
+    }
+    .sidebar ul a svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      transition: all .5s ease;
+      width: 240px;
+    }
+  
+    .content {
+      margin-left:380px; /* Adjust content position for smaller screens */
+      font-size: 45px; 
+    }
+    .main h1{
+      margin-top: 250px;
+    }
+  
+    .buttons {
+      margin-left: 50px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 10px 40px;
+    }
+    .post{
+      padding: 10px 40px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+      font-size: 25px; /* Reduce font size for sidebar items */
+      padding-left: 20px;
+    }
+    .sidebar ul a svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      left: -250px;
+      transition: all .5s ease;
+      /* width: 300px; */
+    }
+  
+    .content {
+      margin-left:400px; /* Adjust content position for smaller screens */
+      font-size: 45px; 
+    }
+    .main h1{
+      margin-top: 160px;
+    }
+  
+    .buttons {
+      margin-left: 50px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 12px 48px;
+    }
+    .post{
+      padding: 12px 48px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+     font-size: 25px; /* Reduce font size for sidebar items */
+      padding-left: 20px;
+    }
+    .sidebar ul a svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 100%; /* Adjusting width for smaller screens */
+      height: 100vh; /* Allow the container's height to adjust automatically */
+      background-size: cover;
+    }
+  
+    .sidebar {
+      /* Hide sidebar by default on smaller screens */
+      left: -250px;
+      transition: all .5s ease;
+      /* width: 300px; */
+    }
+  
+    .content {
+      margin-left:550px; /* Adjust content position for smaller screens */
+      font-size: 45px; 
+    }
+    .main h1{
+      margin-top: 200px;
+    }
+  
+    .buttons {
+      margin-left: 50px;/* Adjust button position for smaller screens */
+      margin-top: 10px;
+    }
+    .get{
+      padding: 14px 70px;
+    }
+    .post{
+      padding: 14px 70px;
+    }
+    .sidebar header,
+    .sidebar ul a {
+     font-size: 28px; /* Reduce font size for sidebar items */
+      padding-left: 30px;
+    }
+    .sidebar ul a svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+/* #check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+} */
