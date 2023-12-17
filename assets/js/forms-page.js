@@ -105,3 +105,49 @@ $(document).ready(function () {
     $(this).next().text(filename);
   });
 });
+$(document).ready(function () {
+  $("#submit").click(function (e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Perform form validation here
+    var isValid = true;
+
+    // Check each required input
+    $('input[required]').each(function () {
+      if (!$(this).val()) {
+        isValid = false;
+        return false; // Exit the loop early if a required field is empty
+      }
+    });
+
+    if (isValid) {
+      // All required fields are filled, proceed to show the modal
+      Swal.fire({
+        title: "Posted",
+        text: "Post added successfully",
+        // imageUrl: "https://unsplash.it/400/200",
+        imageUrl: "./assets/images/back.png",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "Custom image",
+        showConfirmButton: true,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Redirect to "getstarted.html" after clicking OK
+          window.location.href = "getstarted.html";
+        }
+      });
+    } else {
+      // If any required field is empty, alert the user
+      Swal.fire({
+              position: "center",
+              title: "Missing fields",
+              icon: "warning",
+              text: "Please fill all the fields",
+              confirmButtonText: "OK",
+            });
+    }
+  });
+});

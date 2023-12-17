@@ -45,6 +45,7 @@ body {
   margin-left:550px;
   width: 60%;
   height: 100vh;
+  /* overflow-y: scroll; */
 }
 .main-container {
   /* border: 3px solid black; */
@@ -52,6 +53,7 @@ body {
   padding-bottom: 60px;
   display: flex;
   flex-direction: row;
+  /* overflow-y: scroll; */
 }
 .post-content img{
   width: 50px;

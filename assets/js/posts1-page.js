@@ -1,22 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   // Chat button functionality
-//   const chatButton = document.getElementById("chatButton");
-//   const chatSection = document.getElementById("chatSection");
-
-//   chatButton.addEventListener("click", function() {
-//     // Show or hide the chat section when the chat button is clicked
-//     chatSection.style.display = chatSection.style.display === "none" ? "block" : "none";
-//   });
-
-//   // Verify button functionality (this is a placeholder)
-//   const verifyButton = document.getElementById("verifyButton");
-//   const pnrNumberElement = document.getElementById("pnrNumber");
-
-//   verifyButton.addEventListener("click", function() {
-//     // Simulating verification by changing the PNR number
-//     pnrNumberElement.textContent = "VerifiedPNR123"; // Change this logic with actual verification process
-//   });
-// });
 "use strict";
 
 $(document).ready(function () {
@@ -93,8 +74,22 @@ $(document).ready(function () {
       cityInput.setAttribute("list", dataListId);
     }
   }})
-  function rate(stars) {
-    const starElements = document.querySelectorAll('.star');
+  // function rate(stars) {
+  //   const starElements = document.querySelectorAll('.star');
+  
+  //   starElements.forEach((star, index) => {
+  //     if (index === stars - 1 && star.classList.contains('clicked')) {
+  //       star.classList.remove('clicked'); // Remove the yellow background when clicked twice
+  //     } else if (index < stars) {
+  //       star.classList.add('clicked');
+  //     } else {
+  //       star.classList.remove('clicked');
+  //     }
+  //   });
+  // }
+  function rate(stars, cardIndex) {
+    const cards = document.querySelectorAll('.card');
+    const starElements = cards[cardIndex].querySelectorAll('.rating .star');
   
     starElements.forEach((star, index) => {
       if (index === stars - 1 && star.classList.contains('clicked')) {
@@ -106,4 +101,28 @@ $(document).ready(function () {
       }
     });
   }
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const chatButtons = document.querySelectorAll('.chat-btn');
+  //   const ratings = document.querySelectorAll('.rating');
+  
+  //   chatButtons.forEach((button, index) => {
+  //     button.addEventListener('click', function() {
+  //       ratings[index].style.display = 'block';
+  //     });
+  //   });
+  // });
+  // function rate(stars, cardIndex) {
+  //   const cards = document.querySelectorAll('.card');
+  //   const starElements = cards[cardIndex].querySelectorAll('.rating .star');
+  
+  //   starElements.forEach((star, index) => {
+  //     if (index === stars - 1 && star.classList.contains('clicked')) {
+  //       star.classList.remove('clicked'); // Remove the yellow background when clicked twice
+  //     } else if (index < stars) {
+  //       star.classList.add('clicked');
+  //     } else {
+  //       star.classList.remove('clicked');
+  //     }
+  //   });
+  // }
   
