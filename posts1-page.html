@@ -11,17 +11,40 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/posts1-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="post-container">
       <div class="header">
-        <div class="col-12 col-sm-2" id="form-control">
-          <input type="text" class="form-control" placeholder="Flight number" />
+        <div class="back-button">
+          <a href="gethelp.html" class="back-link">
+            <span class="back-arrow">&lt;</span> Back
+          </a>
         </div>
         <div class="col-12 col-sm-2" id="form-control">
           <input
             type="text"
             class="form-control"
+            name="flight-number"
+            placeholder="Flight number"
+          />
+        </div>
+        <div class="col-12 col-sm-2" id="form-control">
+          <input
+            type="text"
+            class="form-control"
+            name="travelling-from"
             placeholder="Travelling from"
             id="cityInputFrom"
             list="citiesListFrom"
@@ -31,6 +54,7 @@
           <input
             type="text"
             class="form-control"
+            name="travelling-to"
             placeholder="Travelling to"
             id="cityInputTo"
             list="citiesListTo"
@@ -39,9 +63,33 @@
         <div class="col-12 col-sm-2" id="form-control">
           <input
             type="date"
+            name="date-of-journey"
             class="form-control"
             placeholder="Departure Date"
           />
+        </div>
+        <div class="action">
+          <div class="profile" onclick="menuToggle();">
+            <img src="./assets/pro.png.png" alt="" />
+          </div>
+
+          <div class="menu">
+            <h3>User Account</h3>
+            <ul>
+              <li>
+                <span class="material-icons icons-size">person</span>
+                <a href="#">My Profile</a>
+              </li>
+              <li>
+                <span class="material-icons icons-size">mode</span>
+                <a href="#">Edit Account</a>
+              </li>
+              <li>
+                <span class="material-icons icons-size">logout</span>
+                <a href="home-page.html">Log out</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="submit-button">
@@ -49,181 +97,9 @@
           Submit
         </button>
       </div>
-      <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <!-- <svg class="bd-placeholder-img card-img-top"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-                <div class="card-body">
-                  <p>
-                    <span class="iata-code">JFK</span>
-                    <img
-                      src="./assets/images/flight.png"
-                      alt="Flight Symbol"
-                      class="flight-symbol"
-                    />
-                    <span class="iata-code">LHR</span>
-                  </p>
-                  <div class="dept">
-                    <p>bengaluru</p>
-                    <p>01/24/2024</p>
-                    <p>hyderabad</p>
-                  </div>
-                  <div class="first">
-                    <p>ABC123</p>
-                    <p>Tharun</p>
-                    <!-- <p>January 1, 2024</p> -->
-                  </div>
-                  <div class="second">
-                    <p>XYZ789</p>
-                    <button
-                      type="button"
-                      class="btn btn-success"
-                      id="verification"
-                    >
-                      Verify PNR
-                    </button>
-                  </div>
-                  <div class="third">
-                    <p><b>Available Space: 5kgs</b></p>
-                  </div>
-                  <div class="fourth">
-                    <button
-                      type="button"
-                      class="btn btn-success btn-lg"
-                      id="chat"
-                    >
-                      chat
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <span class="star" onclick="rate(1,0)">★</span>
-                    <span class="star" onclick="rate(2,0)">★</span>
-                    <span class="star" onclick="rate(3,0)">★</span>
-                    <span class="star" onclick="rate(4,0)">★</span>
-                    <span class="star" onclick="rate(5,0)">★</span>
-                    <!-- <span class="star" onclick="rate(6)">★</span> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div class="card-body">
-                  <p>
-                    <span class="iata-code">JFK</span>
-                    <img
-                      src="./assets/images/flight.png"
-                      alt="Flight Symbol"
-                      class="flight-symbol"
-                    />
-                    <span class="iata-code">LHR</span>
-                  </p>
-                  <div class="dept">
-                    <p>bengaluru</p>
-                    <p>01/24/2024</p>
-                    <p>hyderabad</p>
-                  </div>
-                  <div class="first">
-                    <p>ABC123</p>
-                    <p>Tharun</p>
-                    <!-- <p>January 1, 2024</p> -->
-                  </div>
-                  <div class="second">
-                    <p>XYZ789</p>
-                    <button
-                      type="button"
-                      class="btn btn-success"
-                      id="verification"
-                    >
-                      Verify PNR
-                    </button>
-                  </div>
-                  <div class="third">
-                    <p><b>Available Space: 5kgs</b></p>
-                  </div>
-                  <div class="fourth">
-                    <button
-                      type="button"
-                      class="btn btn-success btn-lg"
-                      id="chat"
-                    >
-                      chat
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <span class="star" onclick="rate(1,1)">★</span>
-                    <span class="star" onclick="rate(2,1)">★</span>
-                    <span class="star" onclick="rate(3,1)">★</span>
-                    <span class="star" onclick="rate(4,1)">★</span>
-                    <span class="star" onclick="rate(5,1)">★</span>
-                    <!-- <span class="star" onclick="rate(6)">★</span> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div class="card-body">
-                  <div class="code">
-                    <p>
-                      <span class="iata-code">JFK</span>
-                      <img
-                        src="./assets/images/flight.png"
-                        alt="Flight Symbol"
-                        class="flight-symbol"
-                      />
-                      <span class="iata-code">LHR</span>
-                    </p>
-                  </div>
-                  <div class="dept">
-                    <p>bengaluru</p>
-                    <p>01/24/2024</p>
-                    <p>hyderabad</p>
-                  </div>
-                  <div class="first">
-                    <p>ABC123</p>
-                    <p>Tharun</p>
-                    <!-- <p>January 1, 2024</p> -->
-                  </div>
-                  <div class="second">
-                    <p>XYZ789</p>
-                    <button
-                      type="button"
-                      class="btn btn-success"
-                      id="verification"
-                    >
-                      Verify PNR
-                    </button>
-                  </div>
-                  <div class="third">
-                    <p><b>Available Space: 5kgs</b></p>
-                  </div>
-                  <div class="fourth">
-                    <button
-                      type="button"
-                      class="btn btn-success btn-lg"
-                      id="chat"
-                    >
-                      chat
-                    </button>
-                  </div>
-                  <div class="rating">
-                    <span class="star" onclick="rate(1,2)">★</span>
-                    <span class="star" onclick="rate(2,2)">★</span>
-                    <span class="star" onclick="rate(3,2)">★</span>
-                    <span class="star" onclick="rate(4,2)">★</span>
-                    <span class="star" onclick="rate(5,2)">★</span>
-                    <!-- <span class="star" onclick="rate(6)">★</span> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
