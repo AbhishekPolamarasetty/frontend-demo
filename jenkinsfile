@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('checkout') {
+            steps {
+               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AbhishekPolamarasetty/frontend-demo.git']])
+            }
+        }
+        stage("build"){
+            steps {
+                sh 'docker build -t abhishekpola/flyshareproject .' 
+            }
+        }
+        stage("push") {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'a3448a0b-6570-4829-ae13-01253d834fb1', passwordVariable: 'DOCKER_HUB_PASSWORD', usernameVariable: 'DOCKER_HUB_USER')]) {
+                 sh 'echo $DOCKER_HUB_PASSWORD | docker login -u $DOCKER_HUB_USER --password-stdin' 
+                    sh 'docker push abhishekpola/flyshareproject'
+                }
+            }
+        }
+        stage("deploy") {
+            steps {
+                sh 'docker rm -f $(docker ps -aq)'
+                sh 'docker run -d -p 5000:5000 abhishekpola/flyshareproject'
+            }
+        }
+    }
+}
