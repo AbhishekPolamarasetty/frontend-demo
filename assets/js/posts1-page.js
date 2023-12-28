@@ -301,13 +301,16 @@ columnsData.forEach((data, index) => {
         </div>
         <div class="second">
             <p>${data.flightInfo[0]}</p>
-            <button type="button" class="btn btn-success" id="verification_${index}">${data.buttonText}</button>
+            <button type="button" class="btn btn-success custom-color" id="verification_${index}">${data.buttonText}</button>
         </div>
         <div class="third">
             <p><b>Available Space: ${data.availableSpace}</b></p>
         </div>
+        <div class="fourth">
+        <button type="button" class="btn btn-success custom-color" id="chat">Chat</button>
         <div class="rating">
             ${Array.from({ length: 5 }, (_, i) => `<span class="star" onclick="rate(${i + 1},${index})">★</span>`).join('')}
+        </div>
         </div>
     `;
 
