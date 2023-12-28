@@ -1,259 +1,275 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLYSHARE HOME PAGE</title>
+    <link rel="icon" href="./assets/images/fevflightworld.png" />
+    <link rel="stylesheet" href="./assets/css/home-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <!-- <a href='#' class="logo"><i class="ri-home-heart-fill"></i><span>FLYSHARE</span></a> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./assets/css/home-page.css">
-
-  <title>FlyShare | Login & Registration</title>
-</head>
-
-<body>
-  <button class="go-top-btn">
-    <img src="./assets/images/scroll.png" alt="arrow up">
-  </button>
-  <div class="wrapper">
-    <nav class="nav">
-      <div class="nav-logo">
-        <p>FLY SHARE </p>
-      </div>
-      <div class="nav-menu" id="navMenu">
-        <ul>
-          <li><a href="#" class="link">Home</a></li>
+  <body>
+    <!-- <div class="background-video">
+      <video class="w-100" autoplay loop muted>
+        <source
+          src="https://mdbootstrap.com/img/video/animation-intro.mp4"
+          type="video/mp4"
+        />
+      </video> -->
+    <!-- </div> -->
+    <div class="first">
+      <button class="go-top-btn">
+        <img src="./assets/images/scroll.png" alt="arrow up" />
+      </button>
+      <div class="circle"></div>
+      <header class="navigation">
+        <a href="#" class="logo"
+          ><img src="./assets/images/personicon.png" width="12%" /><span
+            >Flyshare</span
+          ></a
+        >
+        <ul class="navbar">
+          <li><a href="#home" class="link">Home</a></li>
           <li><a href="#about" class="link">About</a></li>
           <li><a href="#benefits" class="link">Benefits</a></li>
-          <li><a href="#contact" class="link">Contact</a></li>
-          <!-- <li><a href="signup.html" class="link">Signup</a></li>
-          <li><a href="login.html" class="link">Login</a></li> -->
+          <li><a href="#contact1" class="link">Contact</a></li>
         </ul>
-      </div>
+        <div class="main">
+          <a href="login.html" class="user"
+            ><i class="ri-user-fill"></i>Sign In</a
+          >
+          <a href="signup.html" class="register"
+            ><i class="ri-user-fill"></i>Register</a
+          >
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </header>
+      <div class="wrapper">
+        <div class="text-box" id="home">
+          <h1>Join <br />FlyShare</h1>
+          <p>
+            <b>Unite Bags, Share Journeys.</b><br />Travel Together, Explore as
+            Buddies <i class="fas fa-solid fa-plane smile"></i>
+            <i class="fas fa-smile smile"></i>
+          </p>
 
-      <div class="nav-button" id="navButton">
-        <button class="btn white-btn" onclick="window.location.href='signup.html'">Sign up</button>
-        <button class="btn white-btn" onclick="window.location.href='login.html'">Login</button>
-
-      </div>
-      <div class="nav-button-btn1">
-        <i class="fa-solid fa-user" onclick="myUserFunction()()"></i>
-      </div>
-      <div class="nav-menu-btn">
-        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-      </div>
-    </nav>
-    <div class="text-box">
-      <h1>Welcome to FlyShare</h1>
-      <p> "Unlock seamless travel experiences with FlyShare, your ultimate solution for stress-free
-        luggage
-        handling"<br>
-        Travel lighter with FlyShare by your side.<br>FlyShare: where convenience meets your journey,
-        ensuring worry-free trips."</p>
-    </div>
-  </div>
-  <div class="mvv-container" id="about">
-    <!-- <h1> ABOUT US</h1> -->
-    <div class="mvv-block">
-      <div class="image">
-        <img src="./assets/images/share.png" alt="">
-      </div>
-      <div class="content">
-        <h1>Who We Are</h1>
-        <p>Fly Share is a pioneering luggage sharing application designed to revolutionize the way
-          passengers manage their luggage during flights. Our platform connects travelers within the
-          same flight, facilitating the exchange of excess luggage space between those with surplus
-          capacity and those seeking to optimize their baggage allowances.At FlyShare, we're dedicated to
-          reshaping the
-          way people perceive air travel, making it not just a means of transportation, but an opportunity for
-          collaboration, cost-saving, and community-building. Join us in creating a more connected and
-          efficient travel
-          experience for everyone.</p>
-      </div>
-
-    </div>
-    <div class="mvv-block">
-      <div class="image">
-        <img src="./assets/images/vision.png" alt="">
-      </div>
-      <div class="content">
-        <h1> Our Vision</h1>
-        <p>"At Fly Share, our vision is to revolutionize air travel by creating a global community where
-          passengers
-          seamlessly connect to share excess luggage space, fostering a culture of collaboration and mutual
-          benefit.
-          We envision a world where travelers can effortlessly reduce costs, optimize their luggage capacity,
-          and
-          transforming the way people perceive and experience air travel.
-
-          We aspire to build a trusted platform that not only simplifies the process of luggage sharing but
-          also
-          promotes a sustainable travel ecosystem. </p>
-      </div>
-
-    </div>
-    <div class="mvv-block">
-      <div class="image">
-        <img src="./assets/images/mission.png" alt="">
-      </div>
-      <div class="content">
-        <h1> Our Mission</h1>
-        <p>"At Fly Share, our mission is to revolutionize travel by fostering a community-driven approach to
-          luggage
-          sharing within flights. We strive to connect passengers who have excess luggage space with those in
-          need,
-          enabling a collaborative and sustainable way to optimize travel expenses and reduce carbon
-          footprints. By
-          facilitating the sharing of luggage space, we aim to empower travelers to save money, unlock new
-          experiences,
-          and build meaningful connections while contributing to a more efficient and eco-friendly way of
-          flying."
-        </p>
+          <!-- <p>
+            "Unlock seamless travel experiences with FlyShare, your ultimate
+            solution for stress-free luggage handling"<br />
+            Travel lighter with FlyShare by your side.<br />FlyShare: where
+            convenience meets your journey, ensuring worry-free trips."
+          </p> -->
+        </div>
+        <!-- <div class="bgimage">
+          <img
+            src="./assets/images/fotor-ai-20231222125020.jpg"
+            alt="Passengers with luaggage"
+          />
+        </div> -->
       </div>
     </div>
-  </div>
-
-  <div class="wrapper1" id="benefits">
-    <h1>Benefits</h1>
-    <!-- <p>Bag Buddy promotes a sense of collaboration among travelers,<br> encouraging a more sustainable and efficient use of luggage space </p> -->
-    <div class="content-box">
-      <div class="card">
-        <i class="bx bx-bar-chart-alt bx-md"></i>
-        <h2>Save-cost</h2>
-        <p>Share luggage space and reduce excess baggage fees, allowing travelers to save money during their
-        </p>
-
+    <h1 class="heading">About Us</h1>
+    <div class="mvv-container" id="about">
+      <div class="mvv-block">
+        <div class="image" id="image1">
+          <img src="./assets/images/share.png" alt="" />
+        </div>
+        <div class="content">
+          <h1>Who We Are</h1>
+          <div class="content1">
+            <p>
+              Fly Share is a pioneering luggage sharing application designed to
+              revolutionize the way passengers manage their luggage during
+              flights.
+            </p>
+          </div>
+          <div class="content2">
+            <p>
+              <br />Our platform connects travelers within the same flight,
+              facilitating the exchange of excess luggage space between those
+              with surplus capacity and those seeking to optimize their baggage
+              allowances.At FlyShare, we're dedicated to reshaping the way
+              people perceive air travel, making it not just a means of
+              transportation, but an opportunity for collaboration, cost-saving,
+              and community-building. Join us in creating a more connected and
+              efficient travel experience for everyone.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <i class="bx bx-laptop bx-md"></i>
-        <h2> Convenience</h2>
-        <p>Easy and convenient way to utilize available space and avoid carrying additional luggage,
-          ensuring a hassle-free travel experience.</p>
-
+      <div class="mvv-block">
+        <div class="image">
+          <img src="./assets/images/vision.png" alt="" />
+        </div>
+        <div class="content">
+          <h1>Our Vision</h1>
+          <div class="content1">
+            <p>
+              At Fly Share, our vision is to revolutionize air travel by
+              creating a global community where passengers seamlessly connect to
+              share excess luggage space, fostering a culture of collaboration
+              and mutual benefit.
+            </p>
+          </div>
+          <div class="content2">
+            <br />
+            <p>
+              We envision a world where travelers can effortlessly reduce costs,
+              optimize their luggage capacity, and transforming the way people
+              perceive and experience air travel. We aspire to build a trusted
+              platform that not only simplifies the process of luggage sharing
+              but also promotes a sustainable travel ecosystem.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <i class='bx bx-user bx-md'></i>
+      <!-- </div> -->
+      <div class="mvv-block">
+        <div class="image">
+          <img src="./assets/images/mission.png" alt="" />
+        </div>
+        <div class="content">
+          <h1>Our Mission</h1>
+          <div class="content1">
+            <p>
+              "At Fly Share, our mission is to revolutionize travel by fostering
+              a community-driven approach to luggage sharing within flights.
+            </p>
+          </div>
 
-        <h2>Community Engagement</h2>
-        <p>Foster connections among travelers by sharing resources and helping each other, promoting a sense
-          of community within flights.</p>
-
-      </div>
-      <div class="card">
-        <i class="bx bx-mail-send bx-md"></i>
-        <h2>Maximized Efficiency</h2>
-        <p> By optimizing luggage space within a flight, FlyShare helps in maximizing the use of available
-          storage, ensuring that space is utilized efficiently and minimizing wastage.</p>
-
-      </div>
-      <div class="card">
-        <i class="bx bx-bar-chart-alt bx-md"></i>
-        <h2> Flexibility and Adaptability</h2>
-        <p> Passengers can adapt to changing luggage requirements or unexpected circumstances during travel
-          more flexibly by utilizing FlyShare. It allows for dynamic adjustments based on individual
-          needs. </p>
-
-      </div>
-      <div class="card">
-        <i class="bx bx-paint bx-md"></i>
-        <h2>Enhanced Travel Experiencey</h2>
-        <p> Through this platform, passengers might interact and form connections with fellow travelers,
-          enriching their travel experience by sharing stories, tips, or recommendations.</p>
-
+          <div class="content2">
+            <br />
+            <p>
+              We strive to connect passengers who have excess luggage space with
+              those in need, enabling a collaborative and sustainable way to
+              optimize travel expenses and reduce carbon footprints. By
+              facilitating the sharing of luggage space, we aim to empower
+              travelers to save money, unlock new experiences, and build
+              meaningful connections while contributing to a more efficient and
+              eco-friendly way of flying."
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="contact-main" id="contact1">
-    <div class="contact-main-text">
+
+    <div class="wrapper1" id="benefits">
+      <h1>Benefits</h1>
+      <!-- <p>Bag Buddy promotes a sense of collaboration among travelers,<br> encouraging a more sustainable and efficient use of luggage space </p> -->
+      <div class="content-box">
+        <div class="card">
+          <i class="bx bx-bar-chart-alt bx-md"></i>
+          <h2>Save-cost</h2>
+          <p>
+            Share luggage space and reduce excess baggage fees, allowing
+            travelers to save money during their
+          </p>
+        </div>
+        <div class="card">
+          <i class="bx bx-laptop bx-md"></i>
+          <h2>Convenience</h2>
+          <p>
+            Easy and convenient way to utilize available space and avoid
+            carrying additional luggage, ensuring a hassle-free travel
+            experience.
+          </p>
+        </div>
+        <div class="card">
+          <i class="bx bx-user bx-md"></i>
+
+          <h2>Community Engagement</h2>
+          <p>
+            Foster connections among travelers by sharing resources and helping
+            each other, promoting a sense of community within flights.
+          </p>
+        </div>
+        <div class="card">
+          <i class="bx bx-mail-send bx-md"></i>
+          <h2>Maximized Efficiency</h2>
+          <p>
+            By optimizing luggage space within a flight, FlyShare helps in
+            maximizing the use of available storage, ensuring that space is
+            utilized efficiently and minimizing wastage.
+          </p>
+        </div>
+        <div class="card">
+          <i class="bx bx-bar-chart-alt bx-md"></i>
+          <h2>Flexibility and Adaptability</h2>
+          <p>
+            Passengers can adapt to changing luggage requirements or unexpected
+            circumstances during travel more flexibly by utilizing FlyShare. It
+            allows for dynamic adjustments based on individual needs.
+          </p>
+        </div>
+        <div class="card">
+          <i class="bx bx-paint bx-md"></i>
+          <h2>Enhanced Travel Experiencey</h2>
+          <p>
+            Through this platform, passengers might interact and form
+            connections with fellow travelers, enriching their travel experience
+            by sharing stories, tips, or recommendations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-main" id="contact1">
+      <!-- <div class="contact-main-text"> -->
       <h1>Our teams are here to help</h1>
       <p>
-        Get in touch and let us know how we can help. We’ll help you combine
-        the flexibility of the modern web with the control and compliance your
+        Get in touch and let us know how we can help. We’ll help you combine the
+        flexibility of the modern web with the control and compliance your
         business needs.
       </p>
-          <a href="#contact">Need help?</a>
+      <a href="#contact"><b>Need help?</b></a>
+      <!-- </div> -->
     </div>
 
-  </div>
+    <div class="contact-form" id="contact">
+      <h1>Contact our team directly</h1>
+      <form>
+        <input type="text" name="fname" placeholder="First name" required />
+        <input type="text" name="lname" placeholder="Last name" required />
+        <input type="email" name="email" placeholder="Email address" required />
+        <input type="text" name="phone" placeholder="Phone" required />
 
-  <div class="contact-form" id="contact">
-    <h1>Contact our team directly</h1>
-    <form>
-      <!-- <form action="https://formsubmit.co/3c8b0efbdd8eccc2a6cbbbf3edbfd0a6 " method="POST"> -->
-      <input type="text" name="fname" placeholder="First name" required />
-      <input type="text" name="lname" placeholder="Last name" required />
-      <input type="email" name="email" placeholder="Email address" required />
-      <input type="text" name="phone" placeholder="Phone" required />
+        <textarea
+          name="query"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Description"
+        ></textarea>
 
-      <textarea name="query" id="" cols="30" rows="5" placeholder="Description"></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <div class="copyright">
-    &copy; All rights reserved by FlyShare && Made with &hearts; by SRAVYA
-  </div>
-  <!-- </div> -->
-
-
-  <a href="#" class="to-top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-  <script src="./assets/js/home-page.js"></script>
-
-  <script>
-    function myUserFunction() {
-      var navButton = document.getElementById("navButton");
-
-      navButton.classList.toggle("responsive");
-    }
-  </script>
-
-  <script>
-
-    function myMenuFunction() {
-      var i = document.getElementById("navMenu");
-
-      if (i.className === "nav-menu") {
-        i.className += " responsive";
-
-
-      } else {
-        i.className = "nav-menu";
-
-      }
-    }
-
-  </script>
-
-  <script>
-
-    var a = document.getElementById("loginBtn");
-    var b = document.getElementById("registerBtn");
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
-
-    function login() {
-      x.style.left = "4px";
-      y.style.right = "-520px";
-      a.className += " white-btn";
-      b.className = "btn";
-      x.style.opacity = 1;
-      y.style.opacity = 0;
-    }
-
-    function register() {
-      x.style.left = "-510px";
-      y.style.right = "5px";
-      a.className = "btn";
-      b.className += " white-btn";
-      x.style.opacity = 0;
-      y.style.opacity = 1;
-    }
-
-  </script>
-
-
-</body>
-
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="copyright">
+      &copy; All rights reserved by FlyShare && Made with &hearts; by SRAVYA
+    </div>
+    <!-- 
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a> -->
+    <script src="./assets/js/home-page.js"></script>
+    <!-- <script src="./assets/js/newhome.js"></script> -->
+  </body>
 </html>
