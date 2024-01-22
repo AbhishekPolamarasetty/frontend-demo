@@ -18,7 +18,7 @@ body {
 }
 
 .form-body {
-  background-color: #0093ff;
+  /* background-color: #0093ff; */
   height: 100%;
 }
 
@@ -114,7 +114,7 @@ body {
   margin-bottom: 50px;
 }
 
-.preview-body .new .img-link:before {
+/* .preview-body .new .img-link:before {
   position: absolute;
   content: "New";
   top: 0.4rem;
@@ -127,7 +127,7 @@ body {
   z-index: 9999;
   line-height: 1rem;
   padding: 0.4rem 0.7rem;
-}
+} */
 
 .preview-body .img-link {
   position: relative;
