@@ -307,7 +307,7 @@ columnsData.forEach((data, index) => {
             <p><b>Available Space: ${data.availableSpace}</b></p>
         </div>
         <div class="fourth">
-        <button type="button" class="btn btn-success custom-color" id="chat">Chat</button>
+        <button type="button" class="btn btn-success custom-color" id="chat">Chat</button> 
         <div class="rating">
             ${Array.from({ length: 5 }, (_, i) => `<span class="star" onclick="rate(${i + 1},${index})">★</span>`).join('')}
         </div>
